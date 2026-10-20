@@ -1,5 +1,5 @@
 export type {
-  CurrencyInflationView,
+  RateInflationYear,
   CurrencyRateView,
   CurrencyView,
   RateProviderView,

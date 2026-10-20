@@ -15,11 +15,10 @@ export interface CurrencyRateView {
   providerId: number;
   currencyId: number;
   mid: string;
-  provider: RateProviderView;
   currency: CurrencyView;
+  inflation: RateInflationYear[];
 }
-
-export interface CurrencyInflationView {
+export interface RateInflationYear {
   currencyId: number;
   year: number;
   value: string;
