@@ -7,19 +7,29 @@ export interface CurrencyView {
 export interface RateProviderView {
   id: number;
   name: string;
-  baseCurrencyId: number;
   baseCurrency: CurrencyView;
 }
 
-export interface CurrencyRateView {
-  providerId: number;
+export interface RateInflationYear {
+  year: number;
+  value: string;
+}
+
+export interface CurrencyInflationView {
   currencyId: number;
+  year: number;
+  value: string;
+}
+
+export interface CurrencyRateView {
   mid: string;
   currency: CurrencyView;
   inflation: RateInflationYear[];
 }
-export interface RateInflationYear {
-  currencyId: number;
-  year: number;
-  value: string;
+
+export interface CurrencyRateListView {
+  providerId: number;
+  mid: string;
+  currency: CurrencyView;
+  inflation: RateInflationYear[];
 }
