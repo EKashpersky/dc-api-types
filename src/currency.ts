@@ -12,13 +12,13 @@ export interface RateProviderView {
 
 export interface RateInflationYear {
   year: number;
-  value: string;
+  value: number;
 }
 
 export interface CurrencyInflationView {
   currencyId: number;
   year: number;
-  value: string;
+  value: number;
 }
 
 export interface CurrencyRateView {
