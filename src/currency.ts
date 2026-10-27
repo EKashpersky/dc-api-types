@@ -22,14 +22,14 @@ export interface CurrencyInflationView {
 }
 
 export interface CurrencyRateView {
-  mid: string;
+  mid: number;
   currency: CurrencyView;
   inflation: RateInflationYear[];
 }
 
 export interface CurrencyRateListView {
   providerId: number;
-  mid: string;
+  mid: number;
   currency: CurrencyView;
   inflation: RateInflationYear[];
 }
